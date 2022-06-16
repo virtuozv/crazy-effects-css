@@ -30,11 +30,56 @@ input {
     outline: none;
     height: 50px;
     width: 250px;
-    color: aqua;
+    color: #fff;
     font-size: 1.5em;
 }
 
 .box span {
+    pointer-events: none;
+    position: absolute;
+    color: rgb(116, 115, 115);
+    left: 0px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 9px 10px;
+    transition: 0.5s;
+}
+.box input:valid ~ span,
+.box input:focus ~ span {
+    transform: translateX(15px) translateY(-7px);
+    position: absolute;
+    font-size: 0.6em;
+    padding: 0 10px;
+    background-color: red;
+    color: var(--cr);
+}
+
+.box input:focus{
+    box-shadow: 0 0 22px var(--cr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box2 {
+    position: relative;
+    z-index: 0;
+}
+
+.box2 span {
     position: absolute;
     color: rgb(116, 115, 115);
     left: 0px;
@@ -44,17 +89,22 @@ input {
     pointer-events: none;
     transition: 0.5s;
 }
-
-.box input:focus ~ span {
+.box2 input:valid ~ span,
+.box2 input:focus ~ span {
     color: aqua;
     transform: translateX(15px) translateY(-7px);
     position: absolute;
     font-size: 0.6em;
     padding: 0 10px;
-    background-color: aqua;
-    color: black;
+    background-color: #27282c;
+    border-left: 1px aqua solid;
+    border-right: 1px aqua solid;
 }
 
-.box input:focus{
-    box-shadow: 0 0 4px aqua;
+.box2 input:focus{
+    border: 1px solid aqua;
+}
+
+.box2 input:focus > span {
+    color: aqua;
 }
