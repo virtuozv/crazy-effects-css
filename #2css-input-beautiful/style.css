@@ -50,12 +50,13 @@ input {
     position: absolute;
     font-size: 0.6em;
     padding: 0 10px;
-    background-color: red;
+    background-color: goldenrod;
     color: var(--cr);
 }
 
 .box input:focus{
     box-shadow: 0 0 22px var(--cr);
+    border-color: var(--cr);
 }
 
 
