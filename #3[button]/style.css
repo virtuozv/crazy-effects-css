@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+
+    --clr: #0f0;
 }
 
 body {
@@ -26,7 +28,7 @@ body {
     position: relative;
     display: inline-block;
     padding: 15px 30px;
-    border: 2px solid #0f0;
+    border: 2px solid var(--clr);
     margin: 40px;
     text-transform: uppercase;
     font-weight: 600;
@@ -40,7 +42,7 @@ body {
 .container a:hover {
     transition-delay: 1.5s;
     color: #000;
-    box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0, 0 0 80px #0f0, 0 0 160px #0f0;
+    box-shadow: 0 0 10px var(--clr), 0 0 20px var(--clr), 0 0 40px var(--clr), 0 0 80px var(--clr), 0 0 160px var(--clr);
 }
 
 .container a span {
@@ -60,8 +62,8 @@ body {
     transform: translateY(-50%);
     width: 20px;
     height: 2px;
-    background: #0f0;
-    box-shadow: 5px -8px 0 #0f0, 5px 8px 0 #0f0;
+    background: var(--clr);
+    box-shadow: 5px -8px 0 var(--clr), 5px 8px 0 var(--clr);
     transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
     transition-delay: 1s, 0.5s, 0s, 0s;
 }
@@ -70,8 +72,8 @@ body {
     width: 60%;
     height: 105%;
     left: -2px;
-    box-shadow: 5px 0 0 #0f0,
-        5px 0 0 #0f0;
+    box-shadow: 5px 0 0 var(--clr),
+        5px 0 0 var(--clr);
     transition-delay: 0s, 0.5s, 1s, 1s;
 }
 
@@ -83,8 +85,8 @@ body {
     transform: translateY(-50%);
     width: 20px;
     height: 2px;
-    background: #0f0;
-    box-shadow: -5px -8px 0 #0f0, -5px 8px 0 #0f0;
+    background: var(--clr);
+    box-shadow: -5px -8px 0 var(--clr), -5px 8px 0 var(--clr);
     transition: width 0.5s, right 0.5s, height 0.5s, box-shadow 0.5s;
     transition-delay: 1s, 0.5s, 0s, 0s;
 }
@@ -93,7 +95,7 @@ body {
     width: 60%;
     height: 105%;
     right: -2px;
-    box-shadow: -5px 0 0 #0f0,
-        -5px 0 0 #0f0;
+    box-shadow: -5px 0 0 var(--clr),
+        -5px 0 0 var(--clr);
     transition-delay: 0s, 0.5s, 1s, 1s;
 }
